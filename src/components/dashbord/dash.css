@@ -1,0 +1,81 @@
+/* Conteneur principal */
+.chat1 {
+  height: 68vh; /* Toute la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column; /* Affiche les messages en colonne */
+  gap: 10px; /* Ajoute un espace entre les messages */
+  padding: 20px;
+  background-color: #f5f5f5; /* Couleur de fond */
+  overflow: hidden; /* Empêche le dépassement des enfants */
+}
+
+/* Conteneur des messages avec défilement */
+.wra {
+  flex: 1; /* Prend tout l'espace disponible */
+  overflow-y: auto; /* Active le scroll vertical */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Section des messages */
+.ch {
+  width: 50%; /* Limite la largeur */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Style pour les messages de l'utilisateur */
+.user {
+  align-self: flex-end; /* Aligne à droite */
+  background-color: #d1e7dd; /* Couleur de fond */
+  color: #000000; /* Couleur du texte */
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word; /* Permet de couper les mots longs */
+}
+
+/* Style pour les messages de l'IA */
+.ia {
+  align-self: flex-start; /* Aligne à gauche */
+  color: #842029; /* Couleur du texte */
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word; /* Permet de couper les mots longs */
+}
+
+/* Scroll personnalisé */
+.wra::-webkit-scrollbar {
+  width: 0px; /* Largeur de la scrollbar */
+}
+
+.wra::-webkit-scrollbar-thumb {
+  background: #cccccc; /* Couleur de la barre */
+  border-radius: 4px;
+}
+.btnSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; /* Espace autour du conteneur */
+  gap: 10px; /* Espace entre l'input et l'icône */
+}
+
+.search {
+  all: unset;
+  flex: 1; /* L'input prend tout l'espace disponible */
+  background-color: #f5f5f5; /* Couleur de fond */
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 10px;
+  color: #6b6565;
+  padding: 10px 15px; /* Espacement interne */
+}
+
+.search-icon {
+  color: #6b6565;
+  font-size: 1.5rem; /* Taille de l'icône */
+  cursor: pointer; /* Ajoute un curseur pointer */
+}

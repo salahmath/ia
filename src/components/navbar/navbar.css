@@ -1,0 +1,19 @@
+.logo img {
+    top: 60px;
+    width: 40px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajoute de l'espace entre les éléments */
+    padding: 0 20px; /* Ajuste l'espacement intérieur si nécessaire */
+}
+
+.p{
+    font-size: 10px; /* Modifie la taille de police */
+    margin-left: 20px; /* Ajoute un peu d'espace entre les paragraphes */
+    
+}

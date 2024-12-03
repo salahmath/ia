@@ -1,17 +1,12 @@
-body {
-  margin: 0;
-  padding: 0;
+.userId{
+    color: wheat;
 }
 
-
-.container {
-  max-width: 100%;        /* Ensures container is at most 100% of the viewport width */
-  margin: 0 auto;         /* Centers the container */
-}
-
-pre {
-  white-space: pre-wrap;  /* Ensures that the text wraps instead of overflowing */
-  word-wrap: break-word;  /* Breaks long words to fit within the container */
-  max-width: 100%;        /* Ensures the content stays within the width of the container */
-  overflow-x: auto;       /* Adds horizontal scrolling if the content is too wide */
-}
+.center-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Optional, for background color */
+  }
+  
